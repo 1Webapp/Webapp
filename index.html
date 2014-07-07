@@ -2,9 +2,57 @@
   <html lang="es">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap responsive design http://getbootstrap.com/getting-started/ -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
     <title>Webapp</title>
   </head>
   <body>
-    <h1>Hola!</h1>
+    <div class="navbar navbar-default text-center">
+      <div class="container-fluid">
+          <h1>El juego de las palabras</h1>
+      </div>
+    </div>
+    <div class="container">
+
+      <div class="panel panel-default">
+        <div class="panel-body" id="play-forms" onclick="location.href='./html/forms.html'">
+          <!-- col-xs-* <768px | col-sm-* >=768px | col-md-* >=992 | col-lg-* >=1200 -->
+          <div class="col-xs-6 col-sm-10 text-center">
+            <h3>Juega con formas</h3>
+          </div>
+          <div class="col-xs-6 col-sm-2">
+            <img src="img/forms.png" class= "img-responsive">
+          </div>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-body" id="play-ballons" onclick="location.href='./html/ballons.html'">
+          <div class="col-xs-6 col-sm-10 text-center">
+            <h3>Juega con globos</h3>
+          </div>
+          <div class="col-xs-6 col-sm-2 center-block">
+            <img src="img/ballons.png" class= "img-responsive">
+          </div>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-body" id="play-animals" onclick="location.href='./html/animals.html'">
+          <div class="col-xs-6 col-sm-10 text-center">
+            <h3>Juega con animales</h3>
+          </div>
+          <div class="col-xs-6 col-sm-2 center-block">
+            <img src="img/animals.png" class= "img-responsive">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
   </body>
 </html>
